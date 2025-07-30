@@ -24,7 +24,7 @@ This project provides a simple yet effective system for real-time face detection
 
 Use this script to easily capture new images of individuals for your recognition database.
 ```
-python capture\_image.py
+python capture_image.py
 ```
 * Enter the name of the person when prompted.  
 * Press 'q' to capture the image and save it as [name].png.  
