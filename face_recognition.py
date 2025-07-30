@@ -48,8 +48,7 @@ known_face_names = []
 # Check if the known faces directory exists
 if not os.path.exists(KNOWN_FACES_DIR):
     print(f"Error: The '{KNOWN_FACES_DIR}' directory was not found.")
-    print("Please create a folder named 'known_faces' in the same directory as this script.")
-    print("Then, place images of known individuals (e.g., 'John_Doe.jpg') inside that folder.")
+    print("Please create a folder named 'KnownFaces' in the same directory as this script.")
     exit()
 
 # Iterate through files in the known faces directory
@@ -75,14 +74,14 @@ process_this_frame = True
 
 # Setting up the attendance Excel file
 try:
-    rb = xlrd.open_workbook('attendance_excel.xls', formatting_info=True)
+    rb = xlrd.open_workbook('Attendance.xls', formatting_info=True)
 except FileNotFoundError:
     print("attendance_excel.xls not found. Creating a new one.")
     # Create a dummy workbook if it doesn't exist
     wb_new = Workbook()
     wb_new.add_sheet('Sheet1') # Add a default sheet
-    wb_new.save('attendance_excel.xls')
-    rb = xlrd.open_workbook('attendance_excel.xls', formatting_info=True) # Re-open the newly created file
+    wb_new.save('Attendance.xls')
+    rb = xlrd.open_workbook('Attendance.xls', formatting_info=True) # Re-open the newly created file
 
 wb = xl_copy(rb)
 subject_name = input('Please give current subject lecture name: ')
@@ -148,7 +147,7 @@ while True:
                 row = row + 1
                 col = 0
                 print("Attendance taken for", name)
-                wb.save('attendance_excel.xls')
+                wb.save('Attendance.xls')
                 already_attendance_taken = name
             # else:
                 # print("Next student") # This can be very verbose, uncomment if needed for debugging
