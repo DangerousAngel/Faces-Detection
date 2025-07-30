@@ -28,14 +28,9 @@ python capture\_image.py
 * Press 'q' to capture the image and save it as \[name\].png.  
 * Press 'r' to retake the image.
 
-### **2\. Run Face Detection and Attendance (yolov5\_model\_trial.py or face\_recognition.py)**
-
-Both scripts perform similar functions but use slightly different approaches for face detection (YOLOv8-face combined with face\_recognition for encoding). Choose one to run:
-
-python yolov5\_model\_trial.py  
-\# OR  
-python face\_recognition.py
-## **Developer**
+### **2\. Run Face Detection and Attendance (face\_recognition.py)**
+   python face\_recognition.py
+   
 Developed by [DangerousAngel](https://linktr.ee/DangerousAngel)
 
 
