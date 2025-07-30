@@ -6,7 +6,7 @@ This project provides a simple yet effective system for real-time face detection
 
 * **Real-time Face Detection:** Utilizes YOLOv8-face to detect faces in live video streams.  
 * **Face Recognition:** Identifies known individuals based on pre-registered images.  
-* **Automated Attendance:** Records attendance in an Excel file (attendance_excel.xls) for recognized individuals.  
+* **Automated Attendance:** Records attendance in an Excel file (Attendance.xls) for recognized individuals.  
 * **Image Capture Utility:** A separate script to easily capture new images for registering individuals.
 
 ## **Requirements**
@@ -20,17 +20,17 @@ This project provides a simple yet effective system for real-time face detection
 
 ## **Usage**
 
-### **1. Capture New Images (capture_image.py)**
+### **1. Capture New Images (captureFace.py)**
 
 Use this script to easily capture new images of individuals for your recognition database.
 ```
-python capture_image.py
+python captureFace.py
 ```
 * Enter the name of the person when prompted.  
 * Press 'x' to capture the image and save it as [name].png.  
 * Press any key to retake the image.
 
-### **2. Run Face Detection and Attendance (face_recognition.py)**
+### **2. Run Face Detection and Attendance (faceRecognition.py)**
 ```
    python faceRecognition.py
 ```
