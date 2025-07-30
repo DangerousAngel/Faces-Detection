@@ -27,12 +27,12 @@ Use this script to easily capture new images of individuals for your recognition
 python capture_image.py
 ```
 * Enter the name of the person when prompted.  
-* Press 'q' to capture the image and save it as [name].png.  
-* Press 'r' to retake the image.
+* Press 'x' to capture the image and save it as [name].png.  
+* Press any key to retake the image.
 
 ### **2. Run Face Detection and Attendance (face_recognition.py)**
 ```
-   python face_recognition.py
+   python faceRecognition.py
 ```
 Developed by [DangerousAngel](https://linktr.ee/DangerousAngel)
 
