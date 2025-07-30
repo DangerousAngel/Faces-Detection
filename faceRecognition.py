@@ -48,7 +48,6 @@ known_face_names = []
 # Check if the known faces directory exists
 if not os.path.exists(KNOWN_FACES_DIR):
     print(f"Error: The '{KNOWN_FACES_DIR}' directory was not found.")
-    print("Please create a folder named 'KnownFaces' in the same directory as this script.")
     exit()
 
 # Iterate through files in the known faces directory
@@ -65,7 +64,7 @@ for filename in os.listdir(KNOWN_FACES_DIR):
 # Exit if no known faces were successfully loaded
 if not known_face_encodings:
     print(f"No known faces were successfully loaded from the '{KNOWN_FACES_DIR}' directory.")
-    print("Please ensure the folder contains clear images of faces.")
+    print("Ensure the folder contains clear images of faces.")
     exit()
 
 # Initialize some variables
@@ -84,7 +83,7 @@ except FileNotFoundError:
     rb = xlrd.open_workbook('Attendance.xls', formatting_info=True) # Re-open the newly created file
 
 wb = xl_copy(rb)
-subject_name = input('Please give current subject lecture name: ')
+subject_name = input('Subject lecture for the sheet : ')
 sheet1 = wb.add_sheet(subject_name)
 sheet1.write(0, 0, 'Name/Date')
 sheet1.write(0, 1, str(date.today()))
