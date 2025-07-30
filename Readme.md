@@ -34,8 +34,9 @@ Both scripts perform similar functions but use slightly different approaches for
 
 python yolov5\_model\_trial.py  
 \# OR  
-python face\_recognition\_code.py
-
+python face\_recognition.py
+## **Developer**
+Developed by [DangerousAngel](https://linktr.ee/DangerousAngel)
 
 
 
