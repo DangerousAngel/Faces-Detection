@@ -14,23 +14,26 @@ This project provides a simple yet effective system for real-time face detection
 1. Python 3.x  
 2. Install Dependencies:  
    Navigate to the project directory in your terminal and install the necessary libraries using pip:  
+```python
    pip install \-r requirements.txt
+```
 
 ## **Usage**
 
 ### **1\. Capture New Images (capture\_image.py)**
 
 Use this script to easily capture new images of individuals for your recognition database.
-
+```
 python capture\_image.py
-
+```
 * Enter the name of the person when prompted.  
 * Press 'q' to capture the image and save it as \[name\].png.  
 * Press 'r' to retake the image.
 
 ### **2\. Run Face Detection and Attendance (face\_recognition.py)**
+```
    python face\_recognition.py
-   
+```
 Developed by [DangerousAngel](https://linktr.ee/DangerousAngel)
 
 
