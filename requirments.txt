@@ -1,0 +1,6 @@
+ultralytics
+opencv-python
+face-recognition
+numpy
+xlrd
+xlutils
